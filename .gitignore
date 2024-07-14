@@ -7,3 +7,4 @@ neuralnet_env/
 
 # others
 *.log
+*.o

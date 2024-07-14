@@ -39,3 +39,26 @@ class SinData():
         y_batches = np.array(y_batches)
          
         return x_batches, y_batches
+
+class ModelConverter():
+    def generate_c_code(model, output_c_file_path):
+        weights_biases = model.extract_weights_biases()
+        
+        with open(output_c_file_path, 'w') as f:
+            f.write('#include "model_utils.h"\n\n')
+
+            for key in weights_biases:
+                layer_type, layer_index, param_type = key.split('_')
+                param_name = f'{layer_type}{layer_index}_{param_type}'
+                param_values = weights_biases[key].flatten()
+
+                f.write(f'// Define {param_name.replace("_", " ")}\n')
+                f.write(f'float {param_name}[{len(param_values)}] = {{\n')
+
+                for i, value in enumerate(param_values):
+                    f.write(f'    {value}')
+                    if i != len(param_values) - 1:
+                        f.write(',')
+                    f.write('\n')
+
+                f.write('};\n\n')
