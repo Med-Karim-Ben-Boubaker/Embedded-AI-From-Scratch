@@ -15,7 +15,7 @@ Follow these steps to set up the project on your local machine:
 1. **Clone the repository:**
 
     ```sh
-    git clone https://github.com/Med-Karim-Ben-Boubaker/Neural-Network-From-Scratch.git
+    git clone https://github.com/Med-Karim-Ben-Boubaker/Embedded-AI-From-Scratch.git
     cd Neural-Network-From-Scratch
     ```
 
