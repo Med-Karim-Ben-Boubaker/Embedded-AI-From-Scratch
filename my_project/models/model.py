@@ -143,6 +143,6 @@ class Model:
         weights_biases = {}
         for index, layer in enumerate(self.layers):
             if isinstance(layer, DenseLayer):
-                weights_biases[f'layer_{index}_weights'] = layer.weights.astype(np.float32)
+                weights_biases[f'layer_{index}_weights'] = layer.weights.T.astype(np.float32)
                 weights_biases[f'layer_{index}_biases'] = layer.biases.astype(np.float32)
         return weights_biases

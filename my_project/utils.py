@@ -44,11 +44,11 @@ class ModelConverter():
     def generate_c_code(model, output_c_file_path):
         weights_biases = model.extract_weights_biases()
         
+        layer_index = 0
         with open(output_c_file_path, 'w') as f:
             f.write('#include "model_utils.h"\n\n')
-
             for key in weights_biases:
-                layer_type, layer_index, param_type = key.split('_')
+                layer_type, _, param_type = key.split('_')
                 param_name = f'{layer_type}{layer_index}_{param_type}'
                 param_values = weights_biases[key].flatten()
 
@@ -62,3 +62,5 @@ class ModelConverter():
                     f.write('\n')
 
                 f.write('};\n\n')
+                
+                if param_type == 'biases': layer_index += 1
