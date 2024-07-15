@@ -1,41 +1,35 @@
-# Neural-Network-From-Scratch
-This project is a documentation on how to build your own neural network from scratch.
-
-## Documentation
-
-the [docs](docs/documentation.md) folder contains all the documentation about the theory and the thinking process behind creating the neural network. It contains simple explainations 
-about fundamental topic such as forwardprobagation, backpropagation, layers, neurons, activation functions etc...
-
+# NeuralNetworkFromScratch
+This deep learning project aims to create a neural network from scratch using only numpy and math
 ## Setup
 
-Follow these steps to set up the project on your local machine.
+Follow these steps to set up the project on your own machine.
 
 1. Clone the repository:
 
 ```sh
-    git clone https://github.com/Med-Karim-Ben-Boubaker/Neural-Network-From-Scratch.git
-    cd Neural-Network-From-Scratch
+    git clone https://github.com/Mekki-AI/Neural-Network.git
+    cd NN_From_Scratch
 ```
-2. Create a virtual environment
+2. Create an environment
 
 ```sh
-    python -m venv myenv
+    python -m venv env1
 ```
 
-3. Activate the virtual environment
+3. Activate the environment
 
 On windows:
 
 ```sh
-myenv\Scripts\activate
+env1\Scripts\activate
 ```
 On macOS and Linux:
 
 ```sh
-source myenv/bin/activate
+source env1/bin/activate
 ```
 
-4. Install the required packages
+4. Install the following packages
 ```sh
-pip install -r requirements.txt
+pip install req.txt
 ```
