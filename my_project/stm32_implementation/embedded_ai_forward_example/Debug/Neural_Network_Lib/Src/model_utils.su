@@ -1,0 +1,5 @@
+../Neural_Network_Lib/Src/model_utils.c:20:6:linear_activation	32	static
+../Neural_Network_Lib/Src/model_utils.c:33:6:relu_activation	40	static
+../Neural_Network_Lib/Src/model_utils.c:44:6:forward_pass	32	static
+../Neural_Network_Lib/Src/model_utils.c:99:6:model_init	24	static
+../Neural_Network_Lib/Src/model_utils.c:113:6:model_predict	48	static

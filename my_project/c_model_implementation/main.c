@@ -71,14 +71,14 @@ int main() {
     model.init = model_init;
     model.init(&model, layers, layers_num);
 
-    // Testing the sin wave model
-    #ifdef DEBUG_STATE
-    for (int i = 0; i < 6; i++) {
-        input[0] = i;
-        model.predict(&model, input, output);
-        printf("Predicted Output of sin(%f): %f -- Actual Value Sin(%f) = %f\n", input[0], output[0], input[0], sin(input[0]));
-    }
-    #endif
+  // Testing the sin wave model
+  #ifdef DEBUG_STATE
+  for (int i = 0; i < 6; i++) {
+      input[0] = i;
+      model.predict(&model, input, output);
+      printf("Predicted Output of sin(%f): %f -- Actual Value Sin(%f) = %f\n", input[0], output[0], input[0], sin(input[0]));
+  }
+  #endif
     
     return 0;
 }

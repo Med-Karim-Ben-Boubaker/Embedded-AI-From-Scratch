@@ -9,3 +9,4 @@ myenv/
 *.log
 *.o
 main_program
+.metadata
