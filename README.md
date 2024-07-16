@@ -34,10 +34,10 @@ Follow these steps to set up the project on your local machine:
 
 ### Clone the Repository
 
-```sh
-git clone https://github.com/Med-Karim-Ben-Boubaker/Embedded-AI-From-Scratch.git
-cd Embedded-AI-From-Scratch
-```
+    ```sh
+    git clone https://github.com/Med-Karim-Ben-Boubaker/Neural-Network-From-Scratch.git
+    cd Neural-Network-From-Scratch
+    ```
 
 ### Create a Virtual Environment
 
